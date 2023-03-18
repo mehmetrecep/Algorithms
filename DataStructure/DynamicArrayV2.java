@@ -1,6 +1,4 @@
-package DataStructureX.Algorthims;
-
-import java.util.Arrays;
+package DataStructureX.Algorthims.DataStructure;
 
 public class DynamicArrayV2 {
     /*Dynamic array is the same as ArrayList, but it made
