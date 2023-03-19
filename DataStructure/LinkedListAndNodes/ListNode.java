@@ -4,6 +4,7 @@ public class ListNode {
     private int value;
     private ListNode next;
 
+
     public ListNode(int value, ListNode next){
         this.next = next;
         this.value = value;
@@ -12,6 +13,7 @@ public class ListNode {
         this.value = value;
         this.next = null;
     }
+    public ListNode(){}
 
     public int getValue() {
         return value;
