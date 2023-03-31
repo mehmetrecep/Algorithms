@@ -53,7 +53,7 @@ public class DynamicArrayV2 {
         }
         /*
             - If we made the value of i = 0 , i < index and i++
-                 ** for(int i = 0; i < index; i--){
+                 ** for(int i = 0; i < index; i++){
                     array[i] = array[i+1];
                     }*
                 ,we'll lose one element from the array, and you can try it :)

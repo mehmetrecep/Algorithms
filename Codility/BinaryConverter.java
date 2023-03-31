@@ -1,3 +1,5 @@
+package DataStructureX.Algorthims.Codility;
+
 public class BinaryConverter {
 	
 	public static Integer binaryConverter(int decimalNumber) {
