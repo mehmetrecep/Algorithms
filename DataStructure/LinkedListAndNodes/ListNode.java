@@ -49,6 +49,7 @@ public class ListNode <E> {
             System.out.println(numbers.getValue());
             numbers = numbers.getNext();
 
+
         }
 
     }
