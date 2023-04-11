@@ -45,5 +45,10 @@ public class ListNode <E> {
         System.out.printf("%d\n",numbers.getNext().getValue());
         System.out.printf("%d\n",numbers.getNext().getNext().getValue());
 
+        while(numbers != null){
+            System.out.println(numbers.getValue());
+            numbers = numbers.getNext();
+        }
+
     }
 }
