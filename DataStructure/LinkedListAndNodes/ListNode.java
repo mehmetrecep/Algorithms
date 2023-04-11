@@ -1,25 +1,25 @@
 package DataStructureX.Algorthims.DataStructure.LinkedListAndNodes;
 
-public class ListNode {
-    private int value;
-    private ListNode next;
+public class ListNode <E> {
+    private E value;
+    private ListNode <E> next;
 
 
-    public ListNode(int value, ListNode next){
+    public ListNode(E value, ListNode<E> next){
         this.next = next;
         this.value = value;
     }
-    public ListNode(int value){
+    public ListNode(E value){
         this.value = value;
         this.next = null;
     }
     public ListNode(){}
 
-    public int getValue() {
+    public E getValue() {
         return value;
     }
 
-    public void setValue(int value) {
+    public void setValue(E value) {
         this.value = value;
     }
 
@@ -27,7 +27,7 @@ public class ListNode {
         return next;
     }
 
-    public void setNext(ListNode next) {
+    public void setNext(ListNode<E> next) {
         this.next = next;
     }
 
