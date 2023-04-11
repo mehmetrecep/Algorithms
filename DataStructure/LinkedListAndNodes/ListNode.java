@@ -41,5 +41,6 @@ public class ListNode <E> {
         System.out.printf("%d\n",numbers.getValue());
         System.out.printf("%d\n",numbers.getNext().getValue());
         System.out.printf("%d\n",numbers.getNext().getNext().getValue());
+
     }
 }
