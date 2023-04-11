@@ -32,6 +32,14 @@ public class ListNode <E> {
     }
 
     public static void main(String[] args) {
+        ListNode<Integer> numbers =
+                new ListNode<>(2,
+                        new ListNode<>(4,
+                                new ListNode<>(3,null)));
 
+
+        System.out.printf("%d\n",numbers.getValue());
+        System.out.printf("%d\n",numbers.getNext().getValue());
+        System.out.printf("%d\n",numbers.getNext().getNext().getValue());
     }
 }
