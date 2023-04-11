@@ -48,8 +48,6 @@ public class ListNode <E> {
         while(numbers != null){
             System.out.println(numbers.getValue());
             numbers = numbers.getNext();
-
-
         }
 
     }
