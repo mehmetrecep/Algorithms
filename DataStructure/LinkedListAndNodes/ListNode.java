@@ -37,6 +37,9 @@ public class ListNode <E> {
                         new ListNode<>(4,
                                 new ListNode<>(3,null)));
 
+        ListNode<Integer> n1 = new ListNode<>(3,null);
+        ListNode<Integer> n2 = new ListNode<>(4,n1);
+        ListNode<Integer> n3 = new ListNode<>(2,n2);
 
         System.out.printf("%d\n",numbers.getValue());
         System.out.printf("%d\n",numbers.getNext().getValue());
