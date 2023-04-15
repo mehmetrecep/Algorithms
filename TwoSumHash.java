@@ -2,6 +2,7 @@ package DataStructureX.Algorthims;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSumHash {
     public static void main(String[] args) {
@@ -11,6 +12,31 @@ public class TwoSumHash {
     }
     public static class Solution {
         public int[] twoSum(int[] nums, int target) {
+            Map<Integer, Integer> map = new HashMap<>();
+            for (int i = 0; i < nums.length; i++) {
+                map.put(nums[i], i);
+            }
+            for (int i = 0; i < nums.length; i++) {
+                int complement = target - nums[i];
+                if (map.containsKey(complement) && map.get(complement) != i) {
+                    return new int[] { i, map.get(complement) };
+                }
+            }
+            /*
+            HashMap<Integer, Integer> sum = new HashMap<>();
+            for(int j = 0; j < nums.length; j++){
+                sum.put(j,nums[j]);
+            }
+            for(int i = 0; i < nums.length; i++){
+                int n = target - nums[i];
+                if(sum.containsKey(n) && sum.get(n)!=i){
+                    return new int[]{i,sum.get(n)};
+                }
+
+            }
+            return null;
+        }
+            /*
             HashMap<Integer, Integer> sum = new HashMap<>();
             for(int i = 0; i < nums.length; i++){
                 Integer integer = sum.get(nums[i]);
@@ -31,7 +57,8 @@ public class TwoSumHash {
                 }
 
             }
-            return null;
+
          */
-    }
+            return null;
+    }}
 }
