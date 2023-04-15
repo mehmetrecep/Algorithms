@@ -7,7 +7,7 @@ public class TwoSumHash {
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] num = {2,7,11,15};
-        System.out.println(Arrays.toString(solution.twoSum(num, 6)));
+        System.out.println(Arrays.toString(solution.twoSum(num, 9)));
     }
     public static class Solution {
         public int[] twoSum(int[] nums, int target) {
