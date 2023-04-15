@@ -15,7 +15,7 @@ public class TwoSumHash {
             for(int i = 0; i < nums.length; i++){
                 Integer integer = sum.get(nums[i]);
                 if(integer != null){
-                    return new int[]{i,integer};
+                    return new int[]{integer,i};
                 }
                 sum.put(target - nums[i],i);
             }
