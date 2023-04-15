@@ -8,7 +8,7 @@ public class NumberOfOccurrences {
         String[] input = {"1", "1","1","1","3","4", "5", "6", "7"," 7", "7", "8", "8"};
         String inpt = "1, 1, 1, 1, 3, 4, 5, 6, 7, 7, 7, 8, 8";
         System.out.println(numberOf(input));
-        //System.out.println(Arrays.toString(numberOcc(input)));
+        System.out.println(Arrays.toString(numberOcc(input)));
         HashMap<String, Integer> numbers = occurrence(inpt);
         for(String num : numbers.keySet()){
             System.out.println(num + " occurs " + numbers.get(num) + " times.");
