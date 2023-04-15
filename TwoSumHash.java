@@ -13,14 +13,13 @@ public class TwoSumHash {
         public int[] twoSum(int[] nums, int target) {
             HashMap<Integer, Integer> sum = new HashMap<>();
             for(int i = 0; i < nums.length; i++){
-                sum.put(i,nums[i]);
-                int n = target - nums[i];
-                if(sum.containsValue(n)){
-                    return new int[]{n,i};
+                Integer integer = sum.get(nums[i]);
+                if(integer != null){
+                    return new int[]{i,integer};
                 }
-
+                sum.put(target - nums[i],i);
             }
-            return null;
+            return nums;
         }
         /*
          HashMap<Integer, Integer> sum = new HashMap<>();
