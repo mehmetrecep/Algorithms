@@ -1,6 +1,6 @@
 package patternsAndStars.stars;
 
-public class DiamondShape {
+public class diamondShape {
     public static void main(String[] args) {
         int n = 5;
         int i;
