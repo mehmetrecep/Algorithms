@@ -19,5 +19,6 @@ public class LeftTrianglePascal {
             }
             System.out.println();
         }
+
     }
 }
