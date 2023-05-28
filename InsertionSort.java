@@ -3,7 +3,7 @@ package DataStructureX.Algorthims;
 
 public class InsertionSort {
     public static void main(String[] args) {
-        int array[] = {10,3,4,6,8,2,1,9,7,5};
+        int[] array = {10,3,4,6,8,2,1,9,7,5};
 
         insertionSort(array);
         for (int i: array) {
