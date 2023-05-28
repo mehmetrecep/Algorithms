@@ -1,4 +1,4 @@
-public class SelectionSort {
+public class SelectionSortAlgorithm {
     public static void main(String[] args) {
         
         int[] array = {8,9,7,2,3,1,5,4,6};
