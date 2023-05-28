@@ -1,6 +1,6 @@
 package patternsAndStars.stars;
 
-public class LeftTrianglePascals {
+public class LeftTrianglePascal {
     public static void main(String[] args) {
 
     }
