@@ -1,19 +1,17 @@
-#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
-void insertionSort(int array[], int );
-int main(int argc, char *argv[]){
-    int array[14] = {90,12,11,1, 3, 5, 7, 9, 2, 4, 6, 8, 10};
+void insertionSort(int[], int);
+int main(int argc, char *argv[]) {
+    
+    int array[] = {5, 2, 4, 6, 1, 3, 7, 9, 8};
     size_t length = sizeof(array)/sizeof(*array);
     insertionSort(array, length);
     for(int i = 0; i < length; i++){
         printf("%d ", array[i]);
     }
-    printf("\n");
     return 0;
+
 }
 
 void insertionSort(int array[], int length){
@@ -25,8 +23,6 @@ void insertionSort(int array[], int length){
             array[j+1] = array[j];
             j--;
         }
-
         array[j+1] = temp;
     }
 }
-

@@ -1,6 +1,6 @@
 package patternsAndStars.stars;
 
-public class RightPascalsTriangle {
+public class RightPascalsTrianglePattern {
     public static void main(String[] args) {
         int n = 5;
         for(int i = 0; i < n; i++){
